@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Raizel
 // @namespace    落月孤望
-// @version      0.2.3
+// @version      1.0
 // @description  Made by Raizel
 // @match        https://1227719606223765687.discordsays.com/*
 // @match        https://magiccircle.gg/r/*
