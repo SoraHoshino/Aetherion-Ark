@@ -1,6 +1,11 @@
 # Aetherion Ark
 
-Userscript cho **Magic Garden** giúp theo dõi shop và tự động mua các item đã chọn khi shop còn hàng.
+Userscript cho **Magic Garden**.
+
+Hiện có 2 phiên bản:
+
+* **Aetherion Ark 1.0**: bản nhẹ, chỉ tập trung vào **Auto Buy shop**.
+* **Aetherion Ark 2.0**: bản **Full Mod Menu**, có nhiều công cụ hỗ trợ hơn ngoài Auto Buy.
 
 Made by **Raizel**.
 
@@ -17,12 +22,36 @@ Không hoạt động trên app desktop nếu app không hỗ trợ userscript.
 
 ---
 
+## Phiên bản
+
+### Aetherion Ark 1.0 — Stock Buyer
+
+Bản 1.0 là bản nhẹ, chỉ có chức năng chính là **theo dõi shop và tự động mua item đã chọn khi shop còn hàng**.
+
+Phù hợp cho người chỉ cần auto buy đơn giản, không cần mod menu nhiều chức năng.
+
+Tải bản 1.0 tại đây:
+[Aetherion Ark 1.0 - Stock Buyer](https://github.com/SoraHoshino/Aetherion-Ark/raw/refs/heads/main/aetherion-ark-1.0.user.js)
+
+---
+
+### Aetherion Ark 2.0 — Full Mod Menu
+
+Bản 2.0 là bản mod menu đầy đủ hơn, có nhiều chức năng hỗ trợ trong game ngoài Auto Buy.
+
+Phù hợp cho người muốn dùng nhiều công cụ hơn trong một menu tổng hợp.
+
+Tải bản 2.0 tại đây:
+[Aetherion Ark 2.0 - Full Mod Menu](https://github.com/SoraHoshino/Aetherion-Ark/raw/refs/heads/main/aetherion-ark-2.0.user.js)
+
+---
+
 ## Cài đặt cho người mới
 
 ### Bước 1: Cài Tampermonkey
 
 1. Mở Google.
-2. Search:
+2. Tìm kiếm:
 
 ```text
 Tampermonkey Chrome Web Store
@@ -41,7 +70,7 @@ Thêm vào Chrome / Add to Chrome
 Thêm tiện ích / Add extension
 ```
 
-Sau khi cài xong, trên góc phải trình duyệt sẽ có biểu tượng tiện ích hình mảnh ghép.
+Sau khi cài xong, góc phải trình duyệt sẽ có biểu tượng tiện ích hình mảnh ghép.
 
 ---
 
@@ -69,31 +98,31 @@ Chế độ nhà phát triển / Developer mode
 Chi tiết / Details
 ```
 
-8. Bật mục:
+8. Bật:
 
 ```text
 Cho phép tập lệnh của người dùng / Allow User Scripts
 ```
 
-9. Ở mục quyền truy cập trang web, chọn:
+9. Ở phần quyền truy cập trang web, chọn:
 
 ```text
 Trên tất cả trang web / On all sites
 ```
 
-Hoặc cho phép riêng các trang Magic Garden nếu không muốn bật cho tất cả.
+Nếu không muốn bật cho tất cả trang, có thể chỉ cho phép riêng các trang Magic Garden.
 
 ---
 
-### Bước 3: Cài script Aetherion Ark
+### Bước 3: Cài script
 
-Mở link cài đặt:
+Chọn phiên bản muốn dùng:
 
-```text
-https://raw.githubusercontent.com/SoraHoshino/Aetherion-Ark/refs/heads/main/aetherion-ark-1.0.user.js
-```
+[Aetherion Ark 1.0 - Stock Buyer](https://github.com/SoraHoshino/Aetherion-Ark/raw/refs/heads/main/aetherion-ark-1.0.user.js)
 
-Tampermonkey sẽ tự mở trang cài đặt.
+[Aetherion Ark 2.0 - Full Mod Menu](https://github.com/SoraHoshino/Aetherion-Ark/raw/refs/heads/main/aetherion-ark-2.0.user.js)
+
+Sau khi bấm link, Tampermonkey sẽ tự mở trang cài đặt.
 
 Bấm:
 
@@ -118,27 +147,31 @@ Reinstall / Cài lại
 Ctrl + F5
 ```
 
-3. Chờ bảng **Aetherion Ark** hiện lên trong game.
+3. Chờ bảng / menu của script hiện lên trong game.
 
 ---
 
+# Aetherion Ark 1.0 - Stock Buyer
+
 ## Chức năng chính
 
-Aetherion Ark hỗ trợ:
+Bản 1.0 chỉ tập trung vào **Auto Buy shop**.
+
+Hỗ trợ:
 
 ```text
 Tự động quét shop
 Tự động mua item đã chọn khi còn hàng
-Thêm / xóa item khỏi danh sách mua
+Thêm hoặc xóa item khỏi danh sách mua
 Mua nhanh một lần
-Bật / tắt Auto Mode
+Bật hoặc tắt Auto Mode
 Chọn thời gian quét shop
 Chọn số lượng mua tối đa
 Xem log mua hàng
 Xem thống kê số item đã mua và coin đã dùng
 ```
 
-Script hỗ trợ các nhóm item:
+Hỗ trợ các nhóm item:
 
 ```text
 Seed
@@ -147,40 +180,24 @@ Tool
 Decor
 ```
 
-Có hỗ trợ thêm một số item shop event như:
-
-```text
-Dawn shop
-Snow / Winter shop
-```
-
-Ví dụ:
-
-```text
-Dawn Egg
-Snow Egg
-Winter Egg
-Frozen Potion
-Chilled Potion
-Ube
-Dawnbreaker
-Snowdrop
-Poinsettia
-```
-
 ---
 
-## Cách dùng
+## Cách dùng bản 1.0
 
-1. Vào game và chờ panel **Aetherion Ark** hiện lên.
+1. Vào game và chờ panel hiện lên.
 2. Chọn item muốn mua trong danh sách.
-3. Bấm nút `+` để thêm item.
+3. Bấm nút:
+
+```text
++
+```
+
 4. Bấm **Mua nhanh** nếu muốn quét shop ngay một lần.
 5. Bật **Auto: ON** nếu muốn script tự quét theo chu kỳ.
 
 ---
 
-## Tùy chọn
+## Tùy chọn bản 1.0
 
 ### Quét mỗi
 
@@ -218,33 +235,12 @@ Ví dụ:
 ```text
 Mua tối đa = 10
 Shop chỉ còn 3 item
-=> Script chỉ mua tối đa 3 item
+Script chỉ mua tối đa 3 item
 ```
 
 ---
 
-## Các nút trên panel
-
-```text
-Auto: ON/OFF
-Bật hoặc tắt tự động quét shop.
-
-Mua nhanh
-Quét shop và mua ngay một lần.
-
-Nút giỏ hàng
-Mua riêng item đó một lần.
-
-Nút xóa
-Xóa item khỏi danh sách.
-
-Nút thùng rác
-Reset thống kê mua hàng.
-```
-
----
-
-## Log thường gặp
+## Log thường gặp bản 1.0
 
 ```text
 Đã mua
@@ -265,13 +261,44 @@ Game không xác nhận stock giảm hoặc inventory tăng.
 
 ---
 
-## Cập nhật script
+# Aetherion Ark 2.0 - Full Mod Menu
 
-Khi có bản mới, mở lại link:
+## Chức năng chính
+
+Bản 2.0 là bản **Full Mod Menu**, nhiều chức năng hơn bản 1.0.
+
+Có thể bao gồm nhiều công cụ hỗ trợ như:
 
 ```text
-https://raw.githubusercontent.com/SoraHoshino/Aetherion-Ark/refs/heads/main/aetherion-ark-1.0.user.js
+Auto Buy / Stock Buyer
+Công cụ liên quan inventory
+Công cụ liên quan pet
+Công cụ liên quan garden
+Công cụ notifier / thông báo
+Một số tiện ích hỗ trợ chơi Magic Garden
 ```
+
+Bản 2.0 phù hợp với người muốn dùng nhiều tính năng trong một menu tổng hợp.
+
+---
+
+## Lưu ý về bản 2.0
+
+```text
+Bản 2.0 có nhiều chức năng hơn nên file sẽ nặng hơn bản 1.0.
+Nếu chỉ cần auto mua shop đơn giản, nên dùng bản 1.0.
+Nếu muốn dùng full mod menu, dùng bản 2.0.
+```
+
+---
+
+## Cập nhật script
+
+Khi có bản mới, mở lại link bản muốn cài:
+
+[Aetherion Ark 1.0 - Stock Buyer](https://github.com/SoraHoshino/Aetherion-Ark/raw/refs/heads/main/aetherion-ark-1.0.user.js)
+
+[Aetherion Ark 2.0 - Full Mod Menu](https://github.com/SoraHoshino/Aetherion-Ark/raw/refs/heads/main/aetherion-ark-2.0.user.js)
 
 Tampermonkey sẽ hiện màn hình cập nhật.
 
@@ -289,12 +316,12 @@ Ctrl + F5
 
 ---
 
-## Lưu ý
+## Lưu ý chung
 
-Script cần đọc game state để biết shop còn hàng hay không.
-
+```text
+Script cần đọc game state để hoạt động.
 Nếu Magic Garden thay đổi cấu trúc code nội bộ, một số chức năng có thể cần cập nhật lại.
-
-Hãy kiểm tra danh sách item và số lượng mua trước khi bật Auto Mode.
-
+Hãy kiểm tra kỹ danh sách item và số lượng mua trước khi bật Auto Mode.
+Không nên cài cùng lúc quá nhiều script có chức năng giống nhau để tránh bị xung đột.
 Sử dụng script theo trách nhiệm cá nhân.
+```
