@@ -1416,11 +1416,11 @@
   var init_friendSettingsSchema = __esm({
     "src/utils/friendSettingsSchema.ts"() {
       DEFAULT_FRIEND_SETTINGS = {
-        showOnlineFriendsOnly: false,
-        hideRoomFromPublicList: false,
+        showOnlineFriendsOnly: true,
+        hideRoomFromPublicList: true,
         messageSoundEnabled: true,
         friendRequestSoundEnabled: true,
-        showGarden: true,
+        showGarden: false,
         showInventory: true,
         showCoins: true,
         showActivityLog: true,
