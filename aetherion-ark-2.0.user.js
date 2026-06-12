@@ -32826,12 +32826,12 @@
       lastEventAt: friend.lastEventAt,
       badges: friend.badges || null,
       privacy: {
-        showGarden: true,
+        showGarden: false,
         showInventory: true,
         showCoins: true,
         showActivityLog: true,
         showJournal: true,
-        hideRoomFromPublicList: false,
+        hideRoomFromPublicList: true,
         showStats: true
       }
     };
@@ -33558,13 +33558,13 @@
     const profile = getCachedMyProfile();
     const privacySnapshot = profile?.privacy ? { ...profile.privacy } : null;
     const optimisticPrivacy = {
-      showGarden: true,
+      showGarden: false,
       showInventory: true,
       showCoins: true,
       showActivityLog: true,
       showJournal: true,
       showStats: true,
-      hideRoomFromPublicList: false,
+      hideRoomFromPublicList: true,
       ...privacySnapshot ?? {},
       ...settings
     };
@@ -33870,12 +33870,12 @@
               lastEventAt: f.lastEventAt || null,
               badges: f.badges || null,
               privacy: {
-                showGarden: true,
+                showGarden: false,
                 showInventory: true,
                 showCoins: true,
                 showActivityLog: true,
                 showJournal: true,
-                hideRoomFromPublicList: false,
+                hideRoomFromPublicList: true,
                 showStats: true
               }
             }));
@@ -33892,12 +33892,12 @@
               lastEventAt: null,
               badges: r.badges || null,
               privacy: {
-                showGarden: true,
+                showGarden: false,
                 showInventory: true,
                 showCoins: true,
                 showActivityLog: true,
                 showJournal: true,
-                hideRoomFromPublicList: false,
+                hideRoomFromPublicList: true,
                 showStats: true
               },
               createdAt: r.createdAt
@@ -33984,12 +33984,12 @@
                 lastEventAt: null,
                 badges: req.requesterBadges || null,
                 privacy: {
-                  showGarden: true,
+                  showGarden: false,
                   showInventory: true,
                   showCoins: true,
                   showActivityLog: true,
                   showJournal: true,
-                  hideRoomFromPublicList: false,
+                  hideRoomFromPublicList: true,
                   showStats: true
                 },
                 createdAt: req.createdAt
