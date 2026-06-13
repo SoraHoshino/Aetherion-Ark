@@ -66557,12 +66557,15 @@ next: ${next}`;
       const harvestTarget = await automationFindHarvestablePlant(allowedSet, blockedSet, config);
       if (harvestTarget) {
         const slotIndexes = automationShuffle(harvestTarget.slotIndexes);
-        automationSetStatus(`${petName}: thu hoạch cả cây ${harvestTarget.species} (${slotIndexes.length} slot)`);
-        for (const slotIndex of slotIndexes) {
-          await automationWaitActionGap(config.speed);
-          await PlayerService.harvestCrop(harvestTarget.tileIndex, slotIndex);
-          automationSetStatus(`${petName}: đã thu hoạch slot ${slotIndex + 1}/${slotIndexes.length}`);
-        }
+        const slotIndex = slotIndexes[0];
+
+        automationSetStatus(`${petName}: thu hoạch 1 quả ${harvestTarget.species} để feed`);
+
+        await automationWaitActionGap(config.speed);
+        await PlayerService.harvestCrop(harvestTarget.tileIndex, slotIndex);
+
+        automationSetStatus(`${petName}: đã thu hoạch 1 quả ở slot ${slotIndex + 1}`);
+
         crop = await automationWaitForNewCrop(allowedSet, beforeIds, blockedSet);
       }
       if (!crop) {
