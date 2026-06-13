@@ -67177,7 +67177,7 @@ next: ${next}`;
 	      makeAutomationRow("Ngưỡng dừng", "Khi đang feed, đạt ngưỡng này thì dừng.", sliderWrap(stop, stopValue)),
 		      makeAutomationRow("Khoảng quét", "Thời gian giữa mỗi lần kiểm tra tự động.", sliderWrap(interval, intervalValue)),
 		      makeAutomationRow("Tốc độ Pet Feed", "Khoảng nghỉ giữa các lệnh feed và thu hoạch phục vụ pet.", makeControlStack(speedMode)),
-		      makeAutomationRow("Cho phép thu hoạch", "Nếu túi đồ không có thức ăn phù hợp, chọn ngẫu nhiên một cây phù hợp và thu hoạch cả cây.", makeControlStack(harvest)),
+		      makeAutomationRow("Cho phép thu hoạch", "Nếu túi đồ không có thức ăn phù hợp, chọn ngẫu nhiên một cây phù hợp, thu thập từng quả và cho ăn.", makeControlStack(harvest)),
 		      makeAutomationRow("Cho phép thu hoạch Gold", "Khi bật, Pet Feed được hái trái Gold phù hợp để cho pet ăn. Rainbow vẫn được bảo vệ.", makeControlStack(allowGold)),
           makeAutomationRow("Chặn crop feed", "Tick crop đang trồng trong farm để không dùng làm thức ăn từ túi hoặc từ thu hoạch tự động.", makeControlStack(feedBlacklistList, feedBlacklistActions), { fullWidth: true }),
 		      makeAutomationRow("Chạy thủ công", "Chạy một lượt Pet Feed ngay để kiểm tra cấu hình.", makeControlStack(actions))
